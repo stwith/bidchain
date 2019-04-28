@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	  
+    <script src="bundle.js"></script>
+	  
+    <meta charset="UTF-8"/>
+<!--
+		<script language="javascript">
+			function upload(){
+			var formData = new FormData();
+				var fileu = document.getElementById("file")
+formData.append('file', fileu.files[0]);
+var upload = new XMLHttpRequest();
+upload.open("post", "uploadfile");
+upload.send(formData);
+			}
+	  </script>
+-->
+	 
+
+    <link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+  </head>
+	
+	  <header class="header">
+    <h4 class="logo">PYXIS IPFS PORTAL</h4>
+			  
+  </header>
+  <body>
+	  <section class="container">
+    <div align="center">
+      <h3 id="title1">UPLOAD</h3>
+<!--		<div style="width: 0%;"><input style="visibility: hidden" type="file" id="file"/><img src=" " alt="" id="img"></div>-->
+		<div style="text-align: center"><input type="file" id="source" /></div>
+		
+
+<!--		<h1></h1>-->
+		
+      <img width="10%" src="images/upload.png" id="store" alt=""></div>
+		  
+		  <!--    <button id="store">add to ipfs</button>-->
+    <div>
+      <div>文件状态:</div>
+      <div id="hash">等待上传文件</div>
+<!--      <div class="content" id="content">[ipfs content]</div>-->
+    </div>
+		</section>
+	  
+	  <section class="container">
+    <div align="center">
+      <h3 id="title">EXTRACT</h3>
+		<h1></h1>
+		<div ><p>输入hash查询文件</p><input type="text" id="hashinput"/></div>
+		
+		<div style="visibility: hidden"><input id="filecontent"/></div>
+<!--		<div style="text-align: center"><input type="file" id="source"/></div>-->
+		
+
+		<h1></h1>
+		
+      <img width="10%" src="images/download.png" id="extract" alt="" ></div>
+		  
+
+		</section>
+    <div></div>
+	  
+<!--
+    <textarea style="visibility: hidden" id="source">
+    </textarea>
+-->
+
+  </body>
+</html>
